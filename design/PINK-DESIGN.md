@@ -1,0 +1,7 @@
+# Pink mobile redesign — implementation contract
+
+Reference: user screenshots and pink-app-concept.png. Colors: page #F3F2F7, white surfaces, near-black #28272D, primary #F84D91, secondary #FFA6CC, pale #FFE2EE. Use darker pink #B91858 for small accent text to maintain contrast. System sans typography, 32px headings, 20px section headings, 16px body, 13px labels. Mobile 20px gutters, 28px card corners, 14px inputs, 56px pill actions. Floating four-tab bottom navigation and separate quick check-in action. Desktop expands into a comfortable two-column dashboard with a sidebar.
+
+Sections: Today, Week, Pressure observations, This month, Reports, Articles. Reports: pain rating distribution, medications, daily context, activity impact, export. Calendar retains date-specific editing. Profile contains contact fields, language, account controls and data tools. Sign in/sign up uses email verification and configured social providers.
+
+Intentional differences: no fake figures, no automatic conversion from 0–10 pain into clinical severity classes, no confirmed-trigger or weather-sensitivity diagnosis. MIDAS opens the official external resource rather than reproducing a copyrighted questionnaire or computing an invented score. No paywalls. Missing days stay unrecorded. Only the signed-in user's own profile/contact information is stored, not address-book contacts. Provider-dependent functions require a real Supabase project; no simulated account success.
