@@ -42,3 +42,14 @@
 @media(max-width:1100px){.pink-dashboard{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:850px){.desktop-checkin{display:none}.article-grid{grid-template-columns:minmax(0,1fr)}.week-card{padding:20px 16px}.week-strip{gap:6px}.week-strip button b{font-size:14px}.today-overview{gap:12px}.today-overview img{width:30%}}
 @media(max-width:380px){.week-strip{gap:5px}.week-strip button small{font-size:10px}.week-strip button b{font-size:13px}.today-overview{padding:18px}}
+/* Keep the mobile dashboard action readable without compressing its heading. */
+@media(max-width:850px){
+  .page-heading:has(.dashboard-actions){flex-direction:column;align-items:stretch;gap:16px}
+  .page-heading:has(.dashboard-actions)>div:first-child{width:100%;min-width:0}
+  .page-heading .dashboard-actions{width:100%;justify-content:flex-start}
+  .page-heading .dashboard-actions>button{flex:0 0 auto;width:auto;max-width:100%;min-height:44px;padding:10px 16px;font-size:14px;line-height:20px;white-space:nowrap;border-radius:14px}
+  .page-heading .dashboard-actions>button svg{width:18px;height:18px;flex-shrink:0}
+  .page-heading .dashboard-actions>.desktop-checkin{display:none}
+  .week-strip button{width:100%}
+  .week-strip button b{width:clamp(28px,8vw,48px)}
+}
